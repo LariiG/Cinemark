@@ -1,0 +1,45 @@
+<div class="container">
+  <div>
+
+
+    <div class="inputContainer">
+      <input
+        type="text"
+        class="searchInput"
+        placeholder="Nome"
+      />
+      <input
+        type="email"
+        class="searchInput"
+        placeholder="Email"
+      />
+      <input
+        type="tel"
+        class="searchInput"
+        placeholder="Telefone"
+      />
+    </div>
+    <div class="checkboxContainer">
+      <div>
+        <input type="checkbox" class="checkbox"/>
+        <label>
+      <span class="checkboxText">
+        Quero receber as notificações.
+      </span>
+        </label>
+      </div>
+      <div>
+        <input type="checkbox" class="checkbox"/>
+        <label>
+      <span class="checkboxText">
+        Li e aceito os termos de uso.
+      </span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <a [routerLink]="['cadaster-finished']">
+    <button>Finalizar Cadastro</button>
+  </a>
+
+</div>

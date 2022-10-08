@@ -1,0 +1,27 @@
+<div class="container">
+
+
+  <div class="cards">
+    <div class="card" *ngFor="let location of event">
+      <h1>{{location.name}}</h1>
+      <h2>{{location.address}}</h2>
+      <div class="spacer"></div>
+      <div *ngFor="let room of location.rooms">
+        <div style="display: flex; align-items: center">
+          <h3>{{room.name}} - </h3>
+          <div *ngFor="let type of room.types">
+            <h4>{{type[1]}}</h4>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center" >
+          <div *ngFor="let session of room.sessions" >
+            <a [routerLink]="['finish-cadaster']">
+              <button>{{session.time}}</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

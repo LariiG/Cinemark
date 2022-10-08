@@ -1,0 +1,15 @@
+<div class="container">
+  <input type="text" placeholder="Pesquisar">
+  <div class="grid">
+    <div class="card" *ngFor="let event of events">
+      <img [src]="event.image"/>
+      <div>
+        <h1>{{event.title}}</h1>
+        <h2>{{event.genres}}</h2>
+      </div>
+      <a [routerLink]="event.id" >
+        <button>Comprar</button>
+      </a>
+    </div>
+  </div>
+</div>
